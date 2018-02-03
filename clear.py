@@ -1,8 +1,5 @@
 import os
 
-
-
-
 for file in os.listdir("Compressi"):
     path="Compressi\\" + file
     if (os.path.exists(path)):

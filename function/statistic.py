@@ -4,17 +4,14 @@ import matplotlib.image as mpimg
 
 
 def statistic(inputFilenameImg):
-    imgINPUT=os.path.getsize("ImgInput/"+inputFilenameImg);
+    imgINPUT=os.path.getsize("ImgInput\\"+inputFilenameImg);
 
-    r1=os.path.getsize("RESULT/result.jpeg");
-    r2=os.path.getsize("RESULT/jpegDirect/result.jpeg")
-
-
-
+    r1=os.path.getsize("RESULT\\result.jpeg");
+    r2=os.path.getsize("RESULT\\jpegDirect\\result.jpeg")
 
     input= mpimg.imread('ImgInput\\'+inputFilenameImg)
-    custom=mpimg.imread('RESULT/result.jpeg')
-    direct=mpimg.imread('RESULT/jpegDirect/result.jpeg')
+    custom=mpimg.imread('RESULT\\result.jpeg')
+    direct=mpimg.imread('RESULT\\jpegDirect\\result.jpeg')
 
     psnr1= sky.compare_psnr(input,custom)
     print("CUSTOM c.r:"+str(imgINPUT/r1)+":1    psnr:"+str(psnr1));

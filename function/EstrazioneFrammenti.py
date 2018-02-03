@@ -20,10 +20,7 @@ def estrazioneframmentiAcolori(fileNameImgOriginale):
     for s in lista:
         mask = mpimg.imread('Maschere/' + s);
         setcolor(img, mask, 'Frammenti/' + s)
-        #print("save file ",s," in ",s.replace("bmp","ppm"))
         print("estrazione a colore frammento:"+str(i))
-        i=i+1
-
-    print("finish")
+        i+=1
 
 
