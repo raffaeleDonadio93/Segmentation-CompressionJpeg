@@ -4,12 +4,19 @@ import os
 
 
 for file in os.listdir("Compressi"):
-    os.remove("Compressi\\" + file)
+    path="Compressi\\" + file
+    if (os.path.exists(path)):
+        os.remove(path)
 for file in os.listdir("Frammenti"):
-        os.remove("Frammenti\\" + file)
+    path = "Frammenti\\" + file
+    if (os.path.exists(path)):
+        os.remove(path)
 for file in os.listdir("Maschere"):
-        os.remove("Maschere\\" + file)
+    path="Maschere\\" + file
+    if(os.path.exists(path)):
+        os.remove(path)
 
-os.remove("RESULT\\result.jpeg")
-os.remove("RESULT\\jpegDirect\\result.jpeg")
-os.remove("RESULT\\segmentation.bmp")
+results=["RESULT\\result.jpeg","RESULT\\jpegDirect\\result.jpeg","RESULT\\segmentation.bmp"]
+for r in results:
+    if(os.path.exists(r)):
+        os.remove(r)

@@ -9,9 +9,8 @@ felzenszwalb=1
 slic=0;
 
 
-filenameIntoImgInput='serena.bmp'
-#frammentiImpo="frammento0.bmp,frammento7.bmp,frammento12.bmp,frammento10.bmp,frammento17.bmp,frammento15.bmp,frammento16.bmp,frammento20.bmp,frammento21.bmp,frammento22.bmp,frammento24.bmp"
-arr=[0]
+filenameIntoImgInput='tavolo.bmp'
+arr=[0,1,3]
 frammentiImpo="frammento"+str(arr[0])+".bmp";
 arr.pop(0);
 
@@ -22,15 +21,15 @@ for i in arr:
 
 forground = 100
 background = 89
-qulityJpegDicect=76
-algoritmoSegmentation=felzenszwalb
+qulityJpegDicect=94
+algoritmoSegmentation=slic
 
 
 #uguale compression data 100 88 76 quasi uguale psnr
 
 print("estrazione maschere in corso...................")
 
-estrazione_maschere(filenameIntoImgInput,algoritmoSegmentation,n_segments=40);
+estrazione_maschere(filenameIntoImgInput,algoritmoSegmentation,n_segments=120);
 print("end")
 print("ottengo frammenti a colori...................")
 estrazioneframmentiAcolori(filenameIntoImgInput)
