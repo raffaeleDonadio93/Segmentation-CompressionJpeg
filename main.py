@@ -9,8 +9,8 @@ felzenszwalb=1
 slic=0;
 
 
-filenameIntoImgInput='tavolo.bmp'
-arr=[0,1,3]
+filenameIntoImgInput='delta.bmp'
+arr=[15,16,17,18,19,20,21,22,23,25,26,27]
 frammentiImpo="frammento"+str(arr[0])+".bmp";
 arr.pop(0);
 
@@ -21,12 +21,12 @@ for i in arr:
 
 forground = 100
 background = 89
-qulityJpegDicect=94
-algoritmoSegmentation=slic
+qulityJpegDicect=78
+algoritmoSegmentation=felzenszwalb
 
 
 #uguale compression data 100 88 76 quasi uguale psnr
-
+'''
 print("estrazione maschere in corso...................")
 
 estrazione_maschere(filenameIntoImgInput,algoritmoSegmentation,n_segments=120);
@@ -39,7 +39,7 @@ print("comprimo...................")
 
 #mergewithoutCompression(filenameIntoImgInput)
 
-
+'''
 comprimi_frammenti(frammentiImpo,forground,background);
 
 merge();
