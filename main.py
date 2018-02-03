@@ -26,7 +26,7 @@ algoritmoSegmentation=felzenszwalb
 
 
 #uguale compression data 100 88 76 quasi uguale psnr
-'''
+
 print("estrazione maschere in corso...................")
 
 estrazione_maschere(filenameIntoImgInput,algoritmoSegmentation,n_segments=120);
@@ -39,7 +39,7 @@ print("comprimo...................")
 
 #mergewithoutCompression(filenameIntoImgInput)
 
-'''
+
 comprimi_frammenti(frammentiImpo,forground,background);
 
 merge();
