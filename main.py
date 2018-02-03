@@ -9,8 +9,8 @@ felzenszwalb=1
 slic=0;
 
 
-filenameIntoImgInput='delta.bmp'
-arr=[15,16,17,18,19,20,21,22,23,25,26,27]
+filenameIntoImgInput='AstronautaB&W.bmp'
+arr=[1]
 frammentiImpo="frammento"+str(arr[0])+".bmp";
 arr.pop(0);
 
