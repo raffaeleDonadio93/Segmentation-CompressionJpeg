@@ -1,7 +1,7 @@
 import os,sys
 import matplotlib.image as mpimg
 import scipy.misc
-from function.jpeg import jpeg_comrpess
+from function.jpegNostro import jpeg_compress
 
 def comprimi_frammenti(fram,forground,background):
 
@@ -14,6 +14,6 @@ def comprimi_frammenti(fram,forground,background):
 
     for s in lista:
         if s in frammentiImportanti:
-            jpeg_comrpess("Frammenti\\"+s,"Compressi\\"+s,forground)
+            jpeg_compress("Frammenti\\" + s, "Compressi\\" + s, forground)
         else:
-            jpeg_comrpess("Frammenti\\" + s, "Compressi\\" + s, background)
+            jpeg_compress("Frammenti\\" + s, "Compressi\\" + s, background)

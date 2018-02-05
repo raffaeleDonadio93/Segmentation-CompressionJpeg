@@ -2,7 +2,7 @@ from function.CompressioneFrammenti import comprimi_frammenti
 from function.EstrazioneFrammenti import *
 from function.EstrazioneMaschere import estrazione_maschere
 from function.UnioneFrammenti import merge
-from function.jpeg import jpeg_comrpess
+from function.jpegNostro import jpeg_compress
 from function.statistic import statistic
 
 felzenszwalb=1
@@ -37,6 +37,6 @@ comprimi_frammenti(frammentiImpo,forground,background);
 
 merge();
 
-jpeg_comrpess("ImgInput\\"+filenameIntoImgInput,"RESULT\\jpegDirect\\result.jpeg ",qulityJpegDicect);
+jpeg_compress("ImgInput\\" + filenameIntoImgInput, "RESULT\\jpegDirect\\result.jpeg ", qulityJpegDicect);
 
 statistic(filenameIntoImgInput)

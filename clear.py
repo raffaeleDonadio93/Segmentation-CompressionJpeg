@@ -13,6 +13,11 @@ for file in os.listdir("Maschere"):
     if(os.path.exists(path)):
         os.remove(path)
 
+for file in os.listdir("test3Divide"):
+    path="test3Divide\\" + file
+    if(os.path.exists(path)):
+        os.remove(path)
+
 results=["RESULT\\result.jpeg","RESULT\\jpegDirect\\result.jpeg","RESULT\\segmentation.bmp"]
 for r in results:
     if(os.path.exists(r)):
