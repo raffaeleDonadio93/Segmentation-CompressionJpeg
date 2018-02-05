@@ -10,7 +10,7 @@ dirs=['Frammenti','Compressi',"Maschere","test3Divide","RESULT","RESULT\\jpegDir
 for d in dirs:
     if not os.path.exists(d):
         os.makedirs(d)
-'''        
+
 felzenszwalb=1
 slic=0;
 
@@ -46,4 +46,3 @@ merge();
 jpeg_compress("ImgInput\\" + filenameIntoImgInput, "RESULT\\jpegDirect\\result.jpeg ", qulityJpegDicect);
 
 statistic(filenameIntoImgInput)
-'''
