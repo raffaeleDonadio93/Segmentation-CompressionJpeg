@@ -10,7 +10,7 @@ def merge(pathResult='RESULT/result.jpeg',dirMerge="Compressi"):
     for file in os.listdir(dirMerge):
         lista.append(file)
 
-    fr0 = mpimg.imread(dirMerge+'/'+lista.pop())
+    fr0 = mpimg.imread(dirMerge+'/'+lista[0])
     unione = np.zeros(fr0.shape, dtype=fr0.dtype)
 
     for f in lista:
